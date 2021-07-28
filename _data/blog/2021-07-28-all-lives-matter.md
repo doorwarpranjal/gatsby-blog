@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /all-lives-matter
-date: 2021-03-04T04:33:08.143Z
+date: 2021-07-28T12:28:23.243Z
 title: All Lives Matter
 thumbnail: /assets/whatsapp-image-2021-07-15-at-9.02.57-am.jpeg
 author: Teena Benjamin
