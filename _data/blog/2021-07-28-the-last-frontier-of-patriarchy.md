@@ -8,13 +8,13 @@ author: Harini R
 category: Health
 EditorChoice: true
 ---
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -53,9 +53,9 @@ EditorChoice: true
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -634,9 +634,9 @@ EditorChoice: true
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -664,30 +664,48 @@ EditorChoice: true
 	mso-ansi-language:EN-US;
 	mso-fareast-language:EN-US;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
 The female form has been the subject of a variety of types of interest in the social consciousness - it has been at the forefront of hotly debated political issues, it has been reverently idolised in religion, it is the subject of manic sexual fetishization. Beauty has been central to the ideal of femininity throughout history. Beauty trends across different time periods at various places in the world make for fascinating perusal.
 
+<br>
+
 Naomi Wolf’s *‘The Beauty Myth’* begins with an exploration of the relationship between women’s rights and the concept of female beauty. She lays out an unmissable pattern – the ideal of women’s beauty has become more and more unattainable and cruel as women gain liberation in workspaces and in the eyes of the law. The more freedom women gain in society, the worse they feel about their bodies and the more “beauty” remains elusive. She points out that the “bottom-heavy” female body became undesirable in the US as soon as women got the right to vote, arguably a major leap in the long fight for women’s equality. “75% of women are shaped like that, and soft, rounded hips and thighs and bellies were perceived as desirable and sensual without question until women got the vote.” Universal suffrage might have given women more power in the national sphere, but power was taken away from them in more insidious ways. More women might have gained the right to choose their political representatives, but beauty standards became so unrealistic that more women felt uncomfortable in their skin, power taken away from them only to be replaced by self-loathing.
+
+<br>
 
 Beauty is an obsessive and destructive need, earning it is most women’s deepest unspoken desire. Most women are taught from a young age that beauty is integral to womanhood - it is almost equal to identity. A woman’s appearance is inevitably the first thing used to describe her. Phoebe Waller-Bridge’s *Fleabag* features a quietly hilarious scene in which the audience of a feminist lecture is asked a pointed question, “Who among us would give up five years of our lives for the ‘so-called perfect body’?” The titular Fleabag and her sister both raise their hands instinctively, comically fast; the bargain is just too good to pass up.  The scene is familiar - it represents a crisis most modern women face, a crippling inability to love the bodies we possess, the unrealistic and almost fantastical images of beauty around us that surround us, in millions, every day.
 
+<br>
+
 In mythology, wars are fought over the beautiful Helens of the world, while in politics the first insult hurled at the Hilarys and the Kamalas is “ugly”. In fact, female beauty has very different connotations than male beauty. In the stories we tell, female beauty is at once a powerful weapon and a debilitating handicap to the woman who possesses it. The *apsaras* of Hindu mythology used their beauty to “distract” the venerable saints, while a similar sentiment in the modern age drives whole nations to accuse cricketers’ wives of distracting the players from their game.
+
+<br>
 
 It is in the nature of beauty to be fleeting, temporary, and the worst of all : - completely arbitrary. In the Russian roulette of beauty, widely differing body types, face structures, hair types, skin colours have been considered “beautiful” at varying time periods, across the globe. Naomi Wolf notes in *‘The Beauty Myth’*, “ ‘Beauty’ is not universal or changeless … the Maori admire a fat vulva, and the Padung, droopy breasts.”
 
+<br>
+
 The images of beauty over the ages tell an interesting story. In the 1900’s, in the USA and in fact many other parts of the world, a full body and curvaceous hips were considered desirable - many magazines featured models with voluptuous and soft figures, hence setting the body type standard of the era. Back home in India, the wide hips and generous bosom look remained popular even until the 1990’s. Most actresses of that generation were full bodied, a pattern seen among regional film industries too. But in the USA around the same time, the more angular and petite ideal of beauty came into fashion, with trend-defining brands like Playboy, Victoria’s Secret and Vogue featuring more slender models. Tall and slim supermodels became the new standard of female beauty.  With the advent of the internet, the West started gaining a disproportionate influence on the global cultural consciousness, and India was quick to follow the brand new Western rules of beauty. Skinny jeans were in, and extremely slender supermodels started gracing the big screen. Suddenly the traditional curvaceous Indian body type, featured in the sculptures and paintings of medieval India, went out of fashion. As more Indian women tried to change their natural bodies to fit the latest unachievable standard, weight loss tips in magazines, fad diets, slimming machines and foods reached a manic peak. A newly liberated generation of Indian women found themselves grappling against a crippling dislike of their own bodies.
+
+<br>
 
 The toolkit of patriarchy usually has a key characteristic: all brands of misogyny attempt to divide women. The ideal of “beauty” creates barriers between women as not much else does. One need only look at pop culture to immediately find various divisive tropes built on beauty: the popular hot girl vs the nerd girl in glasses, the feminine damsel vs the badass tomboy. Beauty governs female personality in pop culture, and we are split down the middle by the images of beauty forced upon us. We see these images all the time – the fashion industry’s unrealistic and potentially dangerous “size 0” body type, the beauty industry’s obsession with fair skin, the film industry’s unceremonious retirement of women deemed too old to be on screen.
 
+<br>
+
 It is interesting in that beauty also unites women; all of us are bounded by the common pursuit of it. There is a lot of joy in this shared feminine experience  – some of my most cherished memories with the women in my life revolve around beauty - shopping for clothes with my mother, helping a friend get ready, figuring out how to drape a saree with twenty other girls in college. Beauty pits us against each other, but we also recognise it as a relay race we all help each other run.
+
+<br>
 
 We are only now beginning to look at beauty as a symbol of feminine power, rather than a gratuitous offering to the male gaze. We are recognising that there is power and independence in the decisions that women make every day about clothes, hair and makeup.  Politicians like Alexandria Ocasio Cortez talk about the empowerment that makeup and fashion offer them – a uniquely feminine strength. It is a sea change from the public personas of female politicians until just a few years ago :- from Hilary Clinton and Angela Merkel abroad and Indira Gandhi and Mamata Banerjee back home, women in power have always been under immense pressure to dress in sober colours, have the most ordinary hairstyles, and wear clothes that attracted least comment on their appearance. They dressed in a way that best ensured that they would be taken seriously in a man’s world. It is only recently that we are starting to look at makeup as a form of expression and empowerment, a bold statement of independence rather than a frivolous womanly whim.
 
-
+<br>
 
 In a time when we are bombarded with images every day, women have embraced new age feminist philosophies like body positivity and self-image. The power that comes with feminine beauty is slowly and quietly being reclaimed. There is still a long way to go, but the slow uphill battle of seizing control back from the male gaze must be fought.  Freedom over our own bodies is one of the last kinds of liberties that we are still denied – a fitting cause for the 21st century internet feminist.
+
+<br>
 
 <!--EndFragment-->
