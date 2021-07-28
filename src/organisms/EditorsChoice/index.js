@@ -16,6 +16,7 @@ const EditorsChoiceSection = () => {
       allMarkdownRemark(
         limit: 3
         filter: {frontmatter: {EditorChoice: {eq: true}}}
+        sort: {fields: frontmatter___date, order: DESC}
       ) {
         edges {
           node {
