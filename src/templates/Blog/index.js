@@ -28,14 +28,16 @@ export default function Template({
     });
   }, [path]);
 
+  const url = window?.location?.origin;
+
   return (
     <>
       <SEO
         title={title}
         keywords={[category]}
         author={author}
-        siteUrl={path}
-        image={{src: thumbnail}}
+        siteUrl={url + path}
+        image={{src: url + thumbnail}}
         description={excerpt}
       />
 
