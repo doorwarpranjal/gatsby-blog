@@ -45,7 +45,7 @@ export default function Template({
         keywords={[category]}
         author={author}
         siteUrl={path}
-        image={thumbnail}
+        image={{src: thumbnail}}
         description={excerpt}
       />
 
