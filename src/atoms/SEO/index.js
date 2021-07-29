@@ -5,7 +5,6 @@ import {Helmet} from 'react-helmet';
 function SEO({
   description,
   lang,
-  meta,
   image: metaImage,
   title,
   keywords,
@@ -66,35 +65,23 @@ function SEO({
           name: 'twitter:description',
           content: description,
         },
-      ]
-        .concat(
-          metaImage
-            ? [
-                {
-                  property: 'og:image',
-                  content: image,
-                },
-                {
-                  property: 'og:image:width',
-                  content: metaImage.width,
-                },
-                {
-                  property: 'og:image:height',
-                  content: metaImage.height,
-                },
-                {
-                  name: 'twitter:card',
-                  content: 'summary_large_image',
-                },
-              ]
-            : [
-                {
-                  name: 'twitter:card',
-                  content: 'summary',
-                },
-              ],
-        )
-        .concat(meta)}
+        {
+          property: 'og:image',
+          content: image,
+        },
+        {
+          property: 'og:image:width',
+          content: metaImage.width,
+        },
+        {
+          property: 'og:image:height',
+          content: metaImage.height,
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+      ]}
     />
   );
 }
