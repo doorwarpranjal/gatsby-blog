@@ -1,26 +1,23 @@
 /* eslint-disable react/no-danger */
 import React, {useEffect} from 'react';
-import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 
 import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
+import SEO from '../../atoms/SEO';
 import Title from '../../atoms/Title';
 import Spacer from '../../atoms/Spacer';
 import useWindowResize from '../../functions/useWindowResize';
 import AsideContainer from '../../molecules/AsideContainer';
 
 import * as styles from './index.module.css';
-import SEO from '../../atoms/SEO';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const {site, markdownRemark} = data; // data.markdownRemark holds your post data
-  const {siteMetadata} = site;
+  const {markdownRemark} = data; // data.markdownRemark holds your post data
   const {frontmatter, timeToRead, excerpt, html} = markdownRemark;
-  const {thumbnail, path, metaDescription, title, category, date, author} =
-    frontmatter;
+  const {thumbnail, path, title, category, date, author} = frontmatter;
 
   const [mobile] = useWindowResize();
 
@@ -33,13 +30,6 @@ export default function Template({
 
   return (
     <>
-      <Helmet>
-        <title>
-          {title} | {siteMetadata.title}
-        </title>
-        <meta name="description" content={metaDescription} />
-      </Helmet>
-
       <SEO
         title={title}
         keywords={[category]}
@@ -86,11 +76,6 @@ export default function Template({
 
 export const pageQuery = graphql`
   query ($path: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(frontmatter: {path: {eq: $path}}) {
       html
       frontmatter {

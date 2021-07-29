@@ -1,7 +1,6 @@
 /* eslint-disable indent */
 import React from 'react';
 import {Helmet} from 'react-helmet';
-import {useStaticQuery, graphql} from 'gatsby';
 
 function SEO({
   description,
@@ -14,21 +13,6 @@ function SEO({
   author,
   siteUrl,
 }) {
-  const {site} = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-          }
-        }
-      }
-    `,
-  );
-
-  const metaDescription = description || site.siteMetadata.description;
   const image = metaImage && metaImage.src ? metaImage.src : null;
   const canonical = pathname ? `${siteUrl}${pathname}` : null;
 
@@ -38,7 +22,7 @@ function SEO({
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={title}
       link={
         canonical
           ? [
@@ -52,7 +36,7 @@ function SEO({
       meta={[
         {
           name: 'description',
-          content: metaDescription,
+          content: description,
         },
         {
           name: 'keywords',
@@ -64,7 +48,7 @@ function SEO({
         },
         {
           property: 'og:description',
-          content: metaDescription,
+          content: description,
         },
         {
           property: 'og:type',
@@ -80,7 +64,7 @@ function SEO({
         },
         {
           name: 'twitter:description',
-          content: metaDescription,
+          content: description,
         },
       ]
         .concat(
