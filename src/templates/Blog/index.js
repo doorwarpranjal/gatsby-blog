@@ -11,13 +11,14 @@ import useWindowResize from '../../functions/useWindowResize';
 import AsideContainer from '../../molecules/AsideContainer';
 
 import * as styles from './index.module.css';
+import SEO from '../../atoms/SEO';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const {site, markdownRemark} = data; // data.markdownRemark holds your post data
   const {siteMetadata} = site;
-  const {frontmatter, timeToRead, html} = markdownRemark;
+  const {frontmatter, timeToRead, excerpt, html} = markdownRemark;
   const {thumbnail, path, metaDescription, title, category, date, author} =
     frontmatter;
 
@@ -38,6 +39,14 @@ export default function Template({
         </title>
         <meta name="description" content={metaDescription} />
       </Helmet>
+
+      <SEO
+        title={title}
+        keywords={[category]}
+        author={author}
+        siteUrl={path}
+        description={excerpt}
+      />
 
       <Header />
 
@@ -93,6 +102,7 @@ export const pageQuery = graphql`
         category
       }
       timeToRead
+      excerpt
     }
   }
 `;
