@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /watching-movies-with feminist-goggles
-date: 2021-07-30T06:30:14.747Z
+date: 2021-07-30T06:33:48.100Z
 title: Watching Movies with Feminist Goggles
 thumbnail: /assets/fem-gog-02.jpg
 author: Mahima Meenaxi
