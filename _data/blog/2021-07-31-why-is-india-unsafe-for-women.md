@@ -10,13 +10,13 @@ author: Manasa Poovayil
 category: Violence & Harassment
 EditorChoice: false
 ---
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -55,9 +55,9 @@ EditorChoice: false
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -636,9 +636,9 @@ EditorChoice: false
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -665,9 +665,13 @@ EditorChoice: false
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:EN-US;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
-<!--StartFragment-->
+<!--StartFragment-->\
+\
+**\*TRIGGER WARNING\*: Sexual Assault and Violence**\
+\
+<br>
 
 I was scrolling through my social media feed after work as is my routine. While looking at stories I noticed someone had put up a post titled “Why being a woman in India is not easy” and I thought, “This should be interesting”. As a woman living in India, I’m extremely aware of this fact and I do not need another blog post enumerating the reasons to me. Nonetheless, my curiosity piqued. It was a post by thetatvaindia, an independent news curator. Just below this question was an explanation which read “Hundreds of people watch a man kill his wife in broad daylight in Delhi because she chose to work at a hospital and not leave her job to become a ‘Housewife’. People recorded videos, but NO ONE came forward to stop him”.
 
@@ -681,13 +685,9 @@ The reason for committing such a ghastly crime was because the victim wanted to 
 
 <br>
 
- 
-
 **1)         *“Girls should not roam around at night!”***
 
 <br>
-
- 
 
 And if they did, they asked for what came their way.
 
@@ -711,8 +711,6 @@ He even said that the death penalty would make things more dangerous for women a
 
 <br>
 
- 
-
 **2)         *“She’s a woman. She cannot reject a man.”***
 
 <br>
@@ -728,8 +726,6 @@ A man hired goons to attack Aarti Thakur in 2012, twice with a knife and the thi
 The patriarchal society has managed to convince these men that they are entitled to reciprocation of their feelings from the unwilling subjects of their obsession. A rejection sends them into a rage, and they punish the victim and, often, people closest to the victims, for the slight to their ego. In cases where their primary intention is not to kill, they attack the faces. A statement made to isolate the girl socially, and mark her as if to say, ‘If I can’t have her then no one else can’.
 
 <br>
-
-
 
 **3)         *“Our prestige is more important than your life.”***
 
