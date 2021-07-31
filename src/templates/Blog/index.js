@@ -18,7 +18,7 @@ export default function Template({
   const {markdownRemark, site} = data; // data.markdownRemark holds your post data
   const {frontmatter, timeToRead, excerpt, html} = markdownRemark;
   const {thumbnail, path, title, category, date, author} = frontmatter;
-  const {siteUrl} = site.siteMetaData;
+  const {siteUrl} = site.siteMetadata;
 
   const [mobile] = useWindowResize();
 
