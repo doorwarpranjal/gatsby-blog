@@ -8,13 +8,13 @@ author: Mahima Meenaxi
 category: Arts & Media
 EditorChoice: true
 ---
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -53,9 +53,9 @@ EditorChoice: true
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -634,9 +634,9 @@ EditorChoice: true
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -663,7 +663,7 @@ EditorChoice: true
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:EN-US;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -677,9 +677,7 @@ My feminist friends who identify as men also responded to the “*I am feminist 
 
 One might naturally criticize such statements as deteriorating the value of feminism or even dismiss them as hypocritical. However, the *“I am a feminist but \_\_\_\_\_\_\_\_\_\_”* prompt is important in the present day scenario for multiple reasons. We are probably (rather hopefully) living in the period of transition between a staunch patriarchal society and a society that is now taking its baby steps towards gender equality. Thus being the era, we are evidently both, victims of patriarchy and the propagators of feminism. Naturally, we are stuck within the dichotomous pea pod of being a feminist in a society built on patriarchal values and morals. The prompt, helps us assert our feminist ideology while still acknowledging that we are all, irrespective of our gender/sexual identities, also victims of patriarchy in some way. In the midst of the clash between phallocentrism and allocentrism, have emerged the guilty feminists.
 
-<br>\
-<!--\[if !supportLineBreakNewLine]-->\
-<!--\[endif]-->
+<br>
 
 **Is the “feminist guilt” bad?**
 
@@ -709,8 +707,6 @@ Guilt is generally a pro-social emotion. It emerges from self-evaluation, from a
 
 <br>
 
- 
-
 Acknowledging our sub-conscious judgments/biases and trying to overcome them does not make us any less of a feminist.
 
 <br>
@@ -719,9 +715,5 @@ REFERENCES:
 
 * [***From Guilt to Reparation: Exploring the Cognitive Mechanisms Underlying the Effects of Guilt*** by Aurélien Graton and François Ric. ](https://www.researchgate.net/publication/319310947_From_Guilt_to_Reparation_Exploring_the_Cognitive_Mechanisms_Underlying_the_Effects_of_Guilt)
 * ***The Guilty Feminist*** Podcast by Deborah Frances-White
-
-
-
-
 
 <!--EndFragment-->
