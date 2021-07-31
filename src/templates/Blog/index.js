@@ -15,9 +15,10 @@ import * as styles from './index.module.css';
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const {markdownRemark} = data; // data.markdownRemark holds your post data
+  const {markdownRemark, site} = data; // data.markdownRemark holds your post data
   const {frontmatter, timeToRead, excerpt, html} = markdownRemark;
   const {thumbnail, path, title, category, date, author} = frontmatter;
+  const {siteUrl} = site.siteMetaData;
 
   const [mobile] = useWindowResize();
 
@@ -28,16 +29,14 @@ export default function Template({
     });
   }, [path]);
 
-  const url = window?.location?.origin;
-
   return (
     <>
       <SEO
         title={title}
         keywords={[category]}
         author={author}
-        siteUrl={url + path}
-        image={{src: url + thumbnail}}
+        siteUrl={siteUrl + path}
+        image={{src: siteUrl + thumbnail}}
         description={excerpt}
       />
 
@@ -78,6 +77,11 @@ export default function Template({
 
 export const pageQuery = graphql`
   query ($path: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(frontmatter: {path: {eq: $path}}) {
       html
       frontmatter {
