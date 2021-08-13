@@ -62,7 +62,7 @@ export default function Template({
           <img
             className={styles.thumbnailImage}
             src={thumbnail}
-            alt="thumbnail"
+            alt={`thumbnail for ${title}`}
           />
           <Spacer y={mobile ? 30 : 50} />
           <div style={{display: 'flex'}}>

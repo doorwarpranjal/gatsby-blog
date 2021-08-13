@@ -8,7 +8,7 @@ import useImageData from '../../functions/useImageData';
 
 import * as styles from './index.module.css';
 
-export const Image = ({thumbnail}) => {
+export const Image = ({thumbnail, title}) => {
   const allFile = useImageData();
 
   const image = allFile.find((i) => thumbnail.includes(i.name))?.childImageSharp
@@ -21,7 +21,11 @@ export const Image = ({thumbnail}) => {
       className={styles.thumbnail}
     />
   ) : (
-    <img src={thumbnail} className={styles.thumbnail} alt="thumbnail" />
+    <img
+      src={thumbnail}
+      className={styles.thumbnail}
+      alt={`article thumbnail for ${title}`}
+    />
   );
 };
 
@@ -58,7 +62,7 @@ const ArticleCard = (props) => {
   return (
     <div className={styles.container}>
       <Link to={path}>
-        <Image thumbnail={thumbnail} />
+        <Image thumbnail={thumbnail} title={title} />
         {noCategory || (
           <>
             <Spacer y={mobile ? 10 : 20} />
