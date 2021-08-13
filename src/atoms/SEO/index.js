@@ -91,7 +91,7 @@ function SEO({
             "@type": "WebPage",
             "@id": ${canonical}
           },
-          "headline": ${title},
+          "headline": "${title}",
           "image": [
             ${image}
           ],
