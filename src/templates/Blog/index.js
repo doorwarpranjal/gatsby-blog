@@ -29,11 +29,15 @@ export default function Template({
     });
   }, [path]);
 
+  const keywordsFromTitle = title.split(' ');
+  const keywordsFromDesc = excerpt.split(' ');
+  const keywords = keywordsFromTitle.concat(keywordsFromDesc);
+
   return (
     <>
       <SEO
         title={title}
-        keywords={[category]}
+        keywords={keywords}
         author={author}
         siteUrl={siteUrl + path}
         image={{src: siteUrl + thumbnail}}
