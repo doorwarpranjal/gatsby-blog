@@ -38,6 +38,7 @@ export default function Template({
         siteUrl={siteUrl + path}
         image={{src: siteUrl + thumbnail}}
         description={excerpt}
+        date={date}
       />
 
       <Header />
