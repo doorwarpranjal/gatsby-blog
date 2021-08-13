@@ -9,6 +9,7 @@ import Series from '../templates/Series';
 import Footer from '../organisms/Footer';
 
 import '../styles/index.css';
+import SEO from '../atoms/SEO';
 
 const HomePage = () => (
   <>
@@ -33,6 +34,14 @@ const HomePage = () => (
         }
       `}
       </script>
+      <SEO
+        title="The Intersectional Feminist"
+        keywords={['feminism, intersectional']}
+        author="The Intersectional Feminist"
+        siteUrl="https://www.theifmag.com"
+        // image={{src: siteUrl + thumbnail}}
+        // description={excerpt}
+      />
     </Helmet>
     <BannerSection />
     <EditorsChoiceSection />
