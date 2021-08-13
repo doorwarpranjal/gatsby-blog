@@ -15,7 +15,7 @@ export const Image = ({thumbnail, title}) => {
     ?.gatsbyImageData;
   return image ? (
     <GatsbyImage
-      alt="thumbnail"
+      alt={`article thumbnail for ${title}`}
       objectFit="cover"
       image={image}
       className={styles.thumbnail}

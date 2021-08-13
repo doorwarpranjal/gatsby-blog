@@ -82,13 +82,13 @@ const LargeCard = ({
         <GatsbyImage
           className={styles.largeThumbnail}
           image={image}
-          alt="thumbnail"
+          alt={`article thumbnail for ${title}`}
         />
       ) : (
         <img
           src={thumbnail}
           className={styles.largeThumbnail}
-          alt="thumbnail"
+          alt={`article thumbnail for ${title}`}
         />
       )}
       <Spacer y={mobile ? 10 : 20} />
