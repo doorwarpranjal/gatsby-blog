@@ -72,11 +72,11 @@ function SEO({
         },
         {
           property: 'og:image:width',
-          content: metaImage.width,
+          content: metaImage?.width,
         },
         {
           property: 'og:image:height',
-          content: metaImage.height,
+          content: metaImage?.height,
         },
         {
           name: 'twitter:card',
