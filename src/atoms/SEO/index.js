@@ -3,15 +3,15 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 
 function SEO({
-  description,
-  lang,
-  image: metaImage,
-  title,
-  keywords,
-  pathname,
-  author,
-  siteUrl,
-  date,
+  description = '',
+  lang = 'en',
+  image: metaImage = {},
+  title = '',
+  keywords = [],
+  pathname = '',
+  author = '',
+  siteUrl = '',
+  date = new Date().toDateString(),
 }) {
   const image = metaImage && metaImage.src ? metaImage.src : null;
   const canonical = pathname ? `${siteUrl}${pathname}` : null;
