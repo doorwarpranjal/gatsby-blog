@@ -93,13 +93,13 @@ function SEO({
           },
           "headline": "${title}",
           "image": [
-            ${image}
+            "${image}"
           ],
-          "datePublished": ${date},
+          "datePublished": "${date}",
           "author": {
             "@type": "Person",
-            "name": ${author},
-            "url": ${`${siteUrl}/about`}
+            "name": "${author}",
+            "url": "${`${siteUrl}/about`}"
           },
           "publisher": {
             "@type": "Organization",
