@@ -29,11 +29,15 @@ export default function Template({
     });
   }, [path]);
 
+  const keywordsFromTitle = title.split(' ');
+  const keywordsFromDesc = excerpt.split(' ');
+  const keywords = keywordsFromTitle.concat(keywordsFromDesc);
+
   return (
     <>
       <SEO
         title={title}
-        keywords={[category]}
+        keywords={keywords}
         author={author}
         siteUrl={siteUrl + path}
         image={{src: siteUrl + thumbnail}}
@@ -58,7 +62,7 @@ export default function Template({
           <img
             className={styles.thumbnailImage}
             src={thumbnail}
-            alt="thumbnail"
+            alt={`thumbnail for ${title}`}
           />
           <Spacer y={mobile ? 30 : 50} />
           <div style={{display: 'flex'}}>

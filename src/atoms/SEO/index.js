@@ -3,18 +3,39 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 
 function SEO({
-  description,
-  lang,
-  image: metaImage,
-  title,
-  keywords,
-  pathname,
-  author,
-  siteUrl,
-  date,
+  description = '',
+  lang = 'en',
+  image: metaImage = {},
+  title = '',
+  keywords = [],
+  pathname = '',
+  author = '',
+  siteUrl = '',
+  date = new Date().toDateString(),
 }) {
   const image = metaImage && metaImage.src ? metaImage.src : null;
   const canonical = pathname ? `${siteUrl}${pathname}` : null;
+
+  const ldJsonObject = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': canonical,
+    },
+    headline: title,
+    image: [image],
+    datePublished: date,
+    author: {
+      '@type': 'Person',
+      name: author,
+      url: `${siteUrl}/about`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'The Intersectional Feminist',
+    },
+  };
 
   return (
     <Helmet
@@ -83,31 +104,7 @@ function SEO({
           content: 'summary_large_image',
         },
       ]}>
-      <script type="application/ld+json">
-        {`{
-          "@context": "https://schema.org",
-          "@type": "NewsArticle",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": ${canonical}
-          },
-          "headline": ${title},
-          "image": [
-            ${image}
-          ],
-          "datePublished": ${date},
-          "author": {
-            "@type": "Person",
-            "name": ${author},
-            "url": ${`${siteUrl}/about`}
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "The Intersectional Feminist",
-          }
-          }
-        `}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(ldJsonObject)}</script>
     </Helmet>
   );
 }

@@ -38,14 +38,14 @@ const SmallCard = ({
       {image ? (
         <GatsbyImage
           image={image}
-          alt="thumbnail"
+          alt={`thumbnail for ${title}`}
           className={styles.smallThumbnail}
         />
       ) : (
         <img
           src={thumbnail}
           className={styles.smallThumbnail}
-          alt="thumbnail"
+          alt={`thumbnail for ${title}`}
         />
       )}
       <Spacer x={30} />
@@ -82,13 +82,13 @@ const LargeCard = ({
         <GatsbyImage
           className={styles.largeThumbnail}
           image={image}
-          alt="thumbnail"
+          alt={`article thumbnail for ${title}`}
         />
       ) : (
         <img
           src={thumbnail}
           className={styles.largeThumbnail}
-          alt="thumbnail"
+          alt={`article thumbnail for ${title}`}
         />
       )}
       <Spacer y={mobile ? 10 : 20} />

@@ -10,7 +10,7 @@ const SocialImageLink = (props) => {
     <a target="_blank" href={link} rel="noreferrer">
       <img
         src={src}
-        alt={alt}
+        alt={alt || 'social link'}
         layout="fixed"
         width={width || 24}
         height={height || 24}
