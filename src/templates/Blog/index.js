@@ -9,6 +9,7 @@ import Title from '../../atoms/Title';
 import Spacer from '../../atoms/Spacer';
 import useWindowResize from '../../functions/useWindowResize';
 import AsideContainer from '../../molecules/AsideContainer';
+import SocialShareLinks from '../../atoms/SocialShareLinks';
 
 import * as styles from './index.module.css';
 
@@ -52,11 +53,15 @@ export default function Template({
           <Spacer y={mobile ? 20 : 50} />
           <Title removeThatLineBro text={title} />
           <Spacer y={mobile ? 20 : 50} />
-          <div>
-            <h5 className={styles.authorName}>{author}</h5>
-            <h5 className={styles.articleDate}>
-              {`${date} | ${timeToRead} mins`}
-            </h5>
+          <div className={styles.authorAndSocialContainer}>
+            <div>
+              <h5 className={styles.authorName}>{author}</h5>
+              <h5 className={styles.articleDate}>
+                {`${date} | ${timeToRead} mins`}
+              </h5>
+            </div>
+            <Spacer x={mobile ? 20 : 50} />
+            <SocialShareLinks title={title} url={siteUrl + path} />
           </div>
           <Spacer y={mobile ? 20 : 50} />
           <img
@@ -72,7 +77,9 @@ export default function Template({
             />
             <AsideContainer path={path} category={category} />
           </div>
-          <Spacer y={mobile ? 80 : 150} />
+          <Spacer y={mobile ? 20 : 50} />
+          <SocialShareLinks title={title} url={siteUrl + path} />
+          <Spacer y={mobile ? 50 : 100} />
         </article>
       </div>
       <Footer />

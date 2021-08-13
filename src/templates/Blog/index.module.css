@@ -15,6 +15,17 @@
   object-position: left top;
 }
 
+div.container > article > div.authorAndSocialContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 640px) {
+  div.container > article > div.authorAndSocialContainer {
+    justify-content: space-between;
+  }
+}
+
 .authorName {
   font-family: var(--font-secondary);
   font-size: 1em;
