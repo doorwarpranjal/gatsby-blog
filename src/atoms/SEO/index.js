@@ -84,28 +84,27 @@ function SEO({
         },
       ]}>
       <script type="application/ld+json">
-        {`{
-          "@context": "https://schema.org",
-          "@type": "NewsArticle",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": ${canonical}
+        {`
+        {
+          '@context': 'https://schema.org',
+          '@type': 'NewsArticle',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': '${canonical}',
           },
-          "headline": "${title}",
-          "image": [
-            "${image}"
-          ],
-          "datePublished": "${date}",
-          "author": {
-            "@type": "Person",
-            "name": "${author}",
-            "url": "${`${siteUrl}/about`}"
+          headline: '${title}',
+          image: ['${image}'],
+          datePublished: '${date}',
+          author: {
+            '@type': 'Person',
+            name: '${author}',
+            url: '${`${siteUrl}/about`}',
           },
-          "publisher": {
-            "@type": "Organization",
-            "name": "The Intersectional Feminist",
-          }
-          }
+          publisher: {
+            '@type': 'Organization',
+            name: 'The Intersectional Feminist',
+          },
+        }
         `}
       </script>
     </Helmet>
