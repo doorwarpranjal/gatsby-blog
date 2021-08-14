@@ -30,7 +30,7 @@ const HomePage = () => {
         keywords={[
           'feminism',
           'intersectional feminist',
-          'the intersectional feminist',
+          'The Intersectional Feminist',
           'intersectional feminism',
           'feminist',
           'magazine',
