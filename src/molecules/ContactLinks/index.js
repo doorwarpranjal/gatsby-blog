@@ -36,7 +36,7 @@ const ContactLinks = () => {
       <h2>Contact</h2>
       <Spacer y={16} />
       <a className={styles.email} href={`mailto:${email}`}>
-        theifmag@gmail<span className="hide">null</span>.com
+        theifmag@gmail<span className={styles.hide}>null</span>.com
       </a>
       <Spacer y={40} />
       <h2>Follow</h2>
