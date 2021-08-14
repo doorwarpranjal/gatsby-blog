@@ -1,4 +1,5 @@
 import React from 'react';
+import {graphql, useStaticQuery} from 'gatsby';
 
 import BannerSection from '../templates/BannerSection';
 import EditorsChoiceSection from '../organisms/EditorsChoice';
@@ -11,32 +12,46 @@ import SEO from '../atoms/SEO';
 import LOGO from '../images/banner/logo.svg';
 import '../styles/index.css';
 
-const HomePage = () => (
-  <>
-    <SEO
-      title="The Intersectional Feminist"
-      keywords={[
-        'feminism',
-        'intersectional feminism',
-        'feminist',
-        'magazine',
-        'ifmag',
-        'equality',
-        'equal rights',
-        'woman empowerment',
-      ]}
-      author="The Intersectional Feminist"
-      siteUrl="https://www.theifmag.com"
-      image={{src: LOGO}}
-      description="The home page of the Intersectional feminist magazine or ifmag."
-    />
-    <BannerSection />
-    <EditorsChoiceSection />
-    <WhoWeAre />
-    <Series />
-    <LatestArticlesSection />
-    <Footer />
-  </>
-);
+const HomePage = () => {
+  const data = useStaticQuery(graphql`
+    query HomePageQuery {
+      aboutJson {
+        aboutOne
+      }
+    }
+  `);
+
+  const {aboutOne} = data?.aboutJson;
+
+  return (
+    <>
+      <SEO
+        title="The Intersectional Feminist"
+        keywords={[
+          'feminism',
+          'intersectional feminist',
+          'the intersectional feminist',
+          'intersectional feminism',
+          'feminist',
+          'magazine',
+          'ifmag',
+          'equality',
+          'equal rights',
+          'woman empowerment',
+        ]}
+        author="The Intersectional Feminist"
+        siteUrl="https://www.theifmag.com"
+        image={{src: LOGO}}
+        description={aboutOne}
+      />
+      <BannerSection />
+      <EditorsChoiceSection />
+      <WhoWeAre />
+      <Series />
+      <LatestArticlesSection />
+      <Footer />
+    </>
+  );
+};
 
 export default HomePage;
