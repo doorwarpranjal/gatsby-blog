@@ -10,7 +10,7 @@ const Title = ({text, removeThatLineBro, primary}) => {
 
   return (
     <div className="flex-row">
-      <h1 className={styles.title}>{text}</h1>
+      <h2 className={styles.title}>{text}</h2>
       {mobile || removeThatLineBro || (
         <>
           <Spacer x={20} />

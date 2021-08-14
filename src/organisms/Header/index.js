@@ -29,7 +29,7 @@ const Header = ({noSearch}) => {
               alt="logo"
             />
             <Spacer x={mobile ? 10 : 20} />
-            <h1 className={styles.title}>the intersectional feminist</h1>
+            <h2 className={styles.title}>the intersectional feminist</h2>
           </div>
         </Link>
         <div className="flex-row-space-between">

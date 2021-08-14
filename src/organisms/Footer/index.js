@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.container}>
-        <h1 className="titleText">Want to collaborate?</h1>
+        <h2 className="titleText">Want to collaborate?</h2>
         <Spacer y={40} />
         <section className={styles.section}>
           <div className={styles.contactSection}>
