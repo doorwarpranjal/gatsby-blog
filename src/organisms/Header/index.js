@@ -26,7 +26,7 @@ const Header = ({noSearch}) => {
               objectFit="contain"
               className={styles.logo}
               src={LOGO}
-              alt="logo"
+              alt="The Intersectional Feminist Logo"
             />
             <Spacer x={mobile ? 10 : 20} />
             <h2 className={styles.title}>the intersectional feminist</h2>
@@ -42,7 +42,7 @@ const Header = ({noSearch}) => {
                 objectFit="contain"
                 className={styles.searchIcon}
                 src={SEARCH}
-                alt="search"
+                alt="search icon"
               />
             </Link>
           )}

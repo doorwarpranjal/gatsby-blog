@@ -33,7 +33,7 @@ const ScrollToTop = () => {
 
   return (
     <button className={styles.button} id="myBtn" onClick={onClick}>
-      <StaticImage src={UP_ARROW} alt="arrow" />
+      <StaticImage src={UP_ARROW} alt="up arrow" />
     </button>
   );
 };

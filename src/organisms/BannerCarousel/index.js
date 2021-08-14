@@ -28,25 +28,25 @@ const BannerCarousel = () => {
           loading="eager"
           className={styles.image}
           src={CAROUSEL_IMAGE_ONE}
-          alt="carousel"
+          alt="carousel image one"
         />
         <StaticImage
           loading="eager"
           className={styles.image}
           src={CAROUSEL_IMAGE_TWO}
-          alt="carousel"
+          alt="carousel image two"
         />
         <StaticImage
           loading="eager"
           className={styles.image}
           src={CAROUSEL_IMAGE_THREE}
-          alt="carousel"
+          alt="carousel image three"
         />
         <StaticImage
           loading="eager"
           className={styles.image}
           src={CAROUSEL_IMAGE_FOUR}
-          alt="carousel"
+          alt="carousel image four"
         />
       </Carousel>
     </div>

@@ -32,7 +32,7 @@ const NotFoundContainer = () => {
       </div>
       <aside>
         <Spacer y={mobile ? 50 : 100} />
-        <StaticImage objectFit="contain" src={EMPTY_IMAGE} alt="404" />
+        <StaticImage objectFit="contain" src={EMPTY_IMAGE} alt="404 image" />
       </aside>
     </section>
   );

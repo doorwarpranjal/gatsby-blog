@@ -49,7 +49,7 @@ const Search = ({setSearch}) => {
           src={SEARCH}
           height={28}
           width={28}
-          alt="empty"
+          alt="search icon"
         />
         <Input
           autoFocus
@@ -65,7 +65,7 @@ const Search = ({setSearch}) => {
             src={CLOSE_ICON}
             height={28}
             width={28}
-            alt="empty"
+            alt="close icon"
           />
         )}
       </div>
