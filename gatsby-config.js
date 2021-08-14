@@ -171,5 +171,6 @@ module.exports = {
         policy: [{userAgent: '*', allow: '/'}],
       },
     },
+    'gatsby-plugin-webpack-bundle-analyser-v2',
   ],
 };
