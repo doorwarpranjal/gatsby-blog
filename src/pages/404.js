@@ -8,7 +8,7 @@ import NotFoundContainer from '../templates/NotFoundContainer';
 const notFound = () => (
   <>
     <Helmet>
-      <title>The Intersectional Feminist</title>
+      <title>The Intersectional Feminist: 404</title>
     </Helmet>
     <Header />
     <NotFoundContainer />

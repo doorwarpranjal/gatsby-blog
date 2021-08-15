@@ -6,6 +6,9 @@ import CategoryBlock from '../organisms/CategoryBlock';
 import Footer from '../organisms/Footer';
 import Header from '../organisms/Header';
 import useWindowSize from '../functions/useWindowResize';
+import SEO from '../atoms/SEO';
+
+import LOGO from '../images/banner/logo.svg';
 
 const ArticlesPage = (props) => {
   const name = props?.location?.state?.name;
@@ -53,6 +56,25 @@ const ArticlesPage = (props) => {
 
   return (
     <>
+      <SEO
+        title="Articles Page: The Intersectional Feminist"
+        keywords={[
+          'feminism',
+          'intersectional feminist',
+          'The Intersectional Feminist',
+          'intersectional feminism',
+          'feminist',
+          'magazine',
+          'ifmag',
+          'equality',
+          'equal rights',
+          'woman empowerment',
+        ]}
+        author="The Intersectional Feminist"
+        siteUrl="https://www.theifmag.com"
+        image={{src: LOGO}}
+        description="This is the articles page of the intersectional feminist website. Here you can find the list of all the articles that we have published, neatly categorized!"
+      />
       <Header />
       <Spacer y={mobile ? 30 : 80} />
       {megaArrayOfCategories.map((category, key) => (
