@@ -8,11 +8,11 @@ author: Sonal Priya
 category: Opinions & Stories
 EditorChoice: true
 ---
-Crime drama is a significant and popular television genre\[1]. Crime drama plays a very important role in the portrayal of the characters of offenders. These characters are influenced by different criminal and social theories. This also led to defining gendered traits, which became the model on which offenders and victims are perceived. Several studies have been conducted to understand these stereotypes in portrayals of characters\[2]. A common trend in a crime drama is when the offence committed by a criminal protagonist is justified employing fiction and stories, completely underplaying the crime in totality\[3]. In this context, we tried reviewing the Netflix series ‘You’ from a theory of *paternalism* and *neutralism* to understand how the criminal protagonist was normalised and if it led to any sort of victim-blaming and sexism*.*
+Crime drama is a significant and popular television genre\[1]. It plays a very important role in the portrayal of the character of offenders. These characters are influenced by different criminal and social theories. This also led to defining gendered traits, which became the model on which offenders and victims are perceived. Several studies have been conducted to understand these stereotypes in portrayals of characters\[2]. A common trend in a crime drama is when the offence committed by a criminal protagonist is justified employing fiction and stories, underplaying the crime in totality\[3]. In this context, we tried reviewing the Netflix series ‘You’ from a theory of *paternalism* and *neutralism* to understand how the criminal protagonist was normalised and if it led to any sort of victim-blaming and sexism*.*
 
 <br>
 
-Although the series is about a man (the male lead) stalking women (the female lead) and committing heinous crimes such as murder, impersonation, kidnapping, and so on, the description claims that
+Although the series is about a man (Penn Badgely) stalking women (Elizabeth Lail) and committing heinous crimes such as murder, impersonation, kidnapping, and so on, the description claims that
 
 <br>
 
@@ -157,7 +157,7 @@ Women were less likely to perceive behaviour that matches the legal definition o
 
 <br>
 
-Similarly, in the series ‘You,’ the offender’s love and affection trivialise the atrocities he commits. The beliefs of paternalism justify the power that he attempts to build for stalking from the start. His killings and other reprehensible acts are justified by the same principle of knowing better. His character also aids the other needy people in the story by assisting them in overcoming their addictions. His character also aids the other needy people in the storey by assisting them in overcoming their addictions, caring for an abandoned child, and inspiring the female lead character in her profession, among other things. This depiction offers a justified criminal an advantage over a less-than-ideal victim. It’s worth noting that, while the female protagonist does not explicitly show reprehension, she does feel uneasy by it. Another example of this instance from this show is:
+Similarly, in the series ‘You,’ the offender’s love and affection trivialise the atrocities he commits. The beliefs of paternalism justify the power that he attempts to build for stalking from the start. His killings and other reprehensible acts are justified by the same principle of knowing better. His character also aids the other needy people in the story by assisting them in overcoming their addictions, caring for an abandoned child, and inspiring the female lead character in her profession, among other things. This depiction offers a justified criminal an advantage over a less-than-ideal victim. It’s worth noting that, while the female protagonist does not explicitly show reprehension, she does feel uneasy by it. Another example of this instance from this show is:
 
 \
 <br>
