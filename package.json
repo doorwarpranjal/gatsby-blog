@@ -26,6 +26,7 @@
     "gatsby-remark-images": "^5.3.0",
     "gatsby-remark-line-breaks": "^1.0.0",
     "gatsby-remark-prismjs": "^5.3.0",
+    "gatsby-remark-relative-images-v2": "^0.1.5",
     "gatsby-source-filesystem": "^3.6.0",
     "gatsby-transformer-json": "^3.6.0",
     "gatsby-transformer-remark": "^4.3.0",

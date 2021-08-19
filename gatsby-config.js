@@ -12,21 +12,24 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/_data`,
+        name: `markdown-images`,
+        path: `${__dirname}/static/assets`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-images`,
-        path: `${__dirname}/static/assets`,
+        name: `markdown-pages`,
+        path: `${__dirname}/_data`,
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-relative-images-v2`,
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

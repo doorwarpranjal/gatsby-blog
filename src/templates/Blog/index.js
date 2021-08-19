@@ -16,7 +16,7 @@ import * as styles from './index.module.css';
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const {markdownRemark, site} = data; // data.markdownRemark holds your post data
+  const {markdownRemark, imageSharp, site} = data; // data.markdownRemark holds your post data
   const {frontmatter, timeToRead, excerpt, html} = markdownRemark;
   const {thumbnail, path, title, category, date, author} = frontmatter;
   const {siteUrl} = site.siteMetadata;
@@ -67,6 +67,7 @@ export default function Template({
           <img
             className={styles.thumbnailImage}
             src={thumbnail}
+            srcSet={imageSharp?.fluid?.srcSetWebp}
             alt={`thumbnail for ${title}`}
           />
           <Spacer y={mobile ? 30 : 50} />
@@ -88,7 +89,7 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query ($path: String!) {
+  query ($path: String!, $thumbnail: String!) {
     site {
       siteMetadata {
         siteUrl
@@ -107,6 +108,12 @@ export const pageQuery = graphql`
       }
       timeToRead
       excerpt
+    }
+    imageSharp(fluid: {src: {regex: $thumbnail}}) {
+      id
+      fluid {
+        srcSetWebp
+      }
     }
   }
 `;

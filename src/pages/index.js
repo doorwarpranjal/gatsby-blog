@@ -17,16 +17,17 @@ const HomePage = () => {
     query HomePageQuery {
       aboutJson {
         aboutOne
+        aboutTwo
       }
     }
   `);
 
-  const {aboutOne} = data?.aboutJson;
+  const {aboutOne, aboutTwo} = data?.aboutJson;
 
   return (
     <>
       <SEO
-        title="The Intersectional Feminist"
+        title="The homepage of the The Intersectional Feminist magazine."
         keywords={[
           'feminism',
           'intersectional feminist',
@@ -42,7 +43,7 @@ const HomePage = () => {
         author="The Intersectional Feminist"
         siteUrl="https://www.theifmag.com"
         image={{src: LOGO}}
-        description={aboutOne}
+        description={aboutOne.concat(aboutTwo)}
       />
       <BannerSection />
       <EditorsChoiceSection />

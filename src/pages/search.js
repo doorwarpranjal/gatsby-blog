@@ -21,6 +21,7 @@ const SearchPage = () => (
         'equality',
         'equal rights',
         'woman empowerment',
+        'what is intersectional feminist',
       ]}
       author="The Intersectional Feminist"
       siteUrl="https://www.theifmag.com"

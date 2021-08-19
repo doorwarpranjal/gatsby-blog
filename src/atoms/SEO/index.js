@@ -52,7 +52,12 @@ function SEO({
                 href: canonical,
               },
             ]
-          : []
+          : [
+              {
+                rel: 'canonical',
+                href: siteUrl,
+              },
+            ]
       }
       meta={[
         {

@@ -16,6 +16,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
             id
             frontmatter {
               path
+              thumbnail
             }
           }
         }
@@ -30,10 +31,13 @@ exports.createPages = async ({actions, graphql, reporter}) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({node}) => {
+    const thumbnailImage = node.frontmatter.thumbnail.split('assets/')[1];
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        thumbnail: '/' + thumbnailImage + '/g',
+      }, // additional data can be passed via context
     });
   });
 };
