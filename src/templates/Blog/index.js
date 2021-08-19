@@ -2,6 +2,7 @@
 import React, {useEffect} from 'react';
 import {graphql} from 'gatsby';
 
+import {GatsbyImage} from 'gatsby-plugin-image';
 import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
 import SEO from '../../atoms/SEO';
@@ -64,12 +65,19 @@ export default function Template({
             <SocialShareLinks title={title} url={siteUrl + path} />
           </div>
           <Spacer y={mobile ? 20 : 50} />
-          <img
-            className={styles.thumbnailImage}
-            src={thumbnail}
-            srcSet={imageSharp?.fluid?.srcSetWebp}
-            alt={`thumbnail for ${title}`}
-          />
+          {imageSharp ? (
+            <GatsbyImage
+              className={styles.thumbnailImage}
+              image={imageSharp.gatsbyImageData}
+              alt={`thumbnail for ${title}`}
+            />
+          ) : (
+            <img
+              className={styles.thumbnailImage}
+              src={thumbnail}
+              alt={`thumbnail for ${title}`}
+            />
+          )}
           <Spacer y={mobile ? 30 : 50} />
           <div style={{display: 'flex'}}>
             <div
@@ -110,10 +118,7 @@ export const pageQuery = graphql`
       excerpt
     }
     imageSharp(fluid: {src: {regex: $thumbnail}}) {
-      id
-      fluid {
-        srcSetWebp
-      }
+      gatsbyImageData
     }
   }
 `;
