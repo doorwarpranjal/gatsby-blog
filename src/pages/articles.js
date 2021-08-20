@@ -16,7 +16,8 @@ const ArticlesPage = (props) => {
 
   const [mobile] = useWindowSize();
 
-  const {nodes, distinct} = data.allMarkdownRemark;
+  const {allImageSharp, allMarkdownRemark} = data;
+  const {nodes, distinct} = allMarkdownRemark;
   // distinct = array of categories
   // nodes = array of all articles
   const megaArrayOfCategories = distinct.sort().map((category) => {
@@ -59,7 +60,11 @@ const ArticlesPage = (props) => {
       <Header />
       <Spacer y={mobile ? 30 : 80} />
       {megaArrayOfCategories.map((category, key) => (
-        <CategoryBlock category={category} key={key} />
+        <CategoryBlock
+          allImageSharp={allImageSharp}
+          category={category}
+          key={key}
+        />
       ))}
       <Footer />
     </>
@@ -84,6 +89,14 @@ export const PageQuery = graphql`
         excerpt(format: PLAIN, truncate: true, pruneLength: 100)
       }
       distinct(field: frontmatter___category)
+    }
+    allImageSharp {
+      nodes {
+        gatsbyImageData
+        fluid {
+          src
+        }
+      }
     }
   }
 `;

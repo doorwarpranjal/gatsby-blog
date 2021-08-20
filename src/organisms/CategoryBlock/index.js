@@ -14,13 +14,24 @@ import useWindowSize from '../../functions/useWindowResize';
 import DOWN_ARROW from '../../images/articles/down-arrow.svg';
 import * as styles from './index.module.css';
 
-const CategoryBlock = ({category}) => {
+const CategoryBlock = ({category, allImageSharp}) => {
   const [categoryTitle, articles] = category;
   const [collapse, setCollapse] = useState(false);
   const [mobile] = useWindowSize();
 
   const onArrowClick = () => {
     setCollapse(!collapse);
+  };
+
+  const getThumbnail = (thumbnail) => {
+    const strippedDownThumbnail = thumbnail.split('assets/')[1];
+    const image = allImageSharp.nodes
+      .filter((node) => node.fluid.src.includes(strippedDownThumbnail))
+      .map((node) => node.gatsbyImageData);
+    if (image.length) {
+      return image[0];
+    }
+    return false;
   };
 
   return (
@@ -60,12 +71,21 @@ const CategoryBlock = ({category}) => {
                         />
                       </div>
                       <Spacer x={20} />
-                      <Image thumbnail={article.frontmatter.thumbnail} />
+                      <Image
+                        thumbnail={getThumbnail(article.frontmatter.thumbnail)}
+                      />
                     </article>
                   </Link>
                 );
               }
-              return <ArticleCard noCategory key={key} article={article} />;
+              return (
+                <ArticleCard
+                  getThumbnail={getThumbnail}
+                  noCategory
+                  key={key}
+                  article={article}
+                />
+              );
             })}
           </div>
           <Spacer y={mobile ? 30 : 100} />

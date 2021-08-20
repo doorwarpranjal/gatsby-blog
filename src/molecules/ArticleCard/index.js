@@ -4,20 +4,17 @@ import {GatsbyImage} from 'gatsby-plugin-image';
 
 import Spacer from '../../atoms/Spacer';
 import useWindowResize from '../../functions/useWindowResize';
-import useImageData from '../../functions/useImageData';
 
 import * as styles from './index.module.css';
 
-export const Image = ({thumbnail, title}) => {
-  const allFile = useImageData();
+export const Image = ({thumbnail, title, getThumbnail}) => {
+  const thumbnailData = getThumbnail(thumbnail);
 
-  const image = allFile.find((i) => thumbnail.includes(i.name))?.childImageSharp
-    ?.gatsbyImageData;
-  return image ? (
+  return thumbnailData ? (
     <GatsbyImage
       alt={`article thumbnail for ${title}`}
       objectFit="cover"
-      image={image}
+      image={thumbnailData}
       className={styles.thumbnail}
     />
   ) : (
@@ -53,7 +50,7 @@ export const DateTime = ({date, timeToRead}) => (
 );
 
 const ArticleCard = (props) => {
-  const {article, noCategory} = props;
+  const {article, noCategory, getThumbnail} = props;
   const {timeToRead, excerpt, frontmatter} = article;
   const {title, category, thumbnail, author, date, path} = frontmatter;
 
@@ -62,7 +59,11 @@ const ArticleCard = (props) => {
   return (
     <div className={styles.container}>
       <Link to={path}>
-        <Image thumbnail={thumbnail} title={title} />
+        <Image
+          getThumbnail={getThumbnail}
+          thumbnail={thumbnail}
+          title={title}
+        />
         {noCategory || (
           <>
             <Spacer y={mobile ? 10 : 20} />
