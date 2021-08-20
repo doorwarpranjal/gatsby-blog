@@ -4,7 +4,6 @@ import {GatsbyImage} from 'gatsby-plugin-image';
 
 import Spacer from '../../atoms/Spacer';
 import useWindowResize from '../../functions/useWindowResize';
-import useImageData from '../../functions/useImageData';
 
 import * as styles from './index.module.css';
 
@@ -105,12 +104,10 @@ const LargeCard = ({
   </article>
 );
 
-const LatestArticleCard = ({article, index}) => {
+const LatestArticleCard = ({article, getThumbnail, index}) => {
   const [mobile] = useWindowResize();
-  const allFile = useImageData();
 
-  const image = allFile.find((i) => article.thumbnail.includes(i.name))
-    ?.childImageSharp?.gatsbyImageData;
+  const image = getThumbnail(article.thumbnail);
 
   if (mobile || index < 2) {
     return <LargeCard mobile={mobile} {...article} image={image} />;

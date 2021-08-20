@@ -13,7 +13,7 @@ import LOGO from '../images/banner/logo.svg';
 import '../styles/index.css';
 
 const HomePage = (props) => {
-  const {aboutJson, allMarkdownRemark} = props.data;
+  const {aboutJson, allMarkdownRemark, allImageSharp} = props.data;
 
   const {aboutOne} = aboutJson;
   const {edges} = allMarkdownRemark;
@@ -41,10 +41,13 @@ const HomePage = (props) => {
         description={aboutOne}
       />
       <BannerSection />
-      <EditorsChoiceSection />
+      <EditorsChoiceSection allImageSharp={allImageSharp} />
       <WhoWeAre />
       <Series />
-      <LatestArticlesSection listOfArticles={edges} />
+      <LatestArticlesSection
+        allImageSharp={allImageSharp}
+        listOfArticles={edges}
+      />
       <Footer />
     </>
   );
@@ -74,6 +77,14 @@ export const pageQuery = graphql`
             thumbnail
           }
           timeToRead
+        }
+      }
+    }
+    allImageSharp {
+      nodes {
+        gatsbyImageData
+        fluid {
+          src
         }
       }
     }

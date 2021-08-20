@@ -8,7 +8,7 @@ import ArticleCard from '../../molecules/ArticleCard';
 
 import * as styles from './index.module.css';
 
-const EditorsChoiceSection = () => {
+const EditorsChoiceSection = ({allImageSharp}) => {
   const [mobile] = useWindowSize();
 
   const data = useStaticQuery(graphql`
@@ -37,6 +37,17 @@ const EditorsChoiceSection = () => {
     }
   `);
 
+  const getThumbnail = (thumbnail) => {
+    const strippedDownThumbnail = thumbnail.split('assets/')[1];
+    const image = allImageSharp.nodes
+      .filter((node) => node.fluid.src.includes(strippedDownThumbnail))
+      .map((node) => node.gatsbyImageData);
+    if (image.length) {
+      return image[0];
+    }
+    return false;
+  };
+
   const articles = data.allMarkdownRemark.edges.map((i) => i.node);
 
   return (
@@ -46,7 +57,11 @@ const EditorsChoiceSection = () => {
       <Spacer y={mobile ? 50 : 100} />
       <div className={styles.articleContainer}>
         {articles.map((article, key) => (
-          <ArticleCard article={article} key={key} />
+          <ArticleCard
+            getThumbnail={getThumbnail}
+            article={article}
+            key={key}
+          />
         ))}
       </div>
       <Spacer y={mobile ? 0 : 100} />
