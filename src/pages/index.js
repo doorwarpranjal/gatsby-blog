@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql, useStaticQuery} from 'gatsby';
+import {graphql} from 'gatsby';
 
 import BannerSection from '../templates/BannerSection';
 import EditorsChoiceSection from '../organisms/EditorsChoice';
@@ -12,17 +12,8 @@ import SEO from '../atoms/SEO';
 import LOGO from '../images/banner/logo.svg';
 import '../styles/index.css';
 
-const HomePage = () => {
-  const data = useStaticQuery(graphql`
-    query HomePageQuery {
-      aboutJson {
-        aboutOne
-        aboutTwo
-      }
-    }
-  `);
-
-  const {aboutOne, aboutTwo} = data?.aboutJson;
+const HomePage = ({data}) => {
+  const {aboutOne} = data?.aboutJson;
 
   return (
     <>
@@ -39,11 +30,12 @@ const HomePage = () => {
           'equality',
           'equal rights',
           'woman empowerment',
+          'what is intersectional feminist',
         ]}
         author="The Intersectional Feminist"
         siteUrl="https://www.theifmag.com"
         image={{src: LOGO}}
-        description={aboutOne.concat(aboutTwo)}
+        description={aboutOne}
       />
       <BannerSection />
       <EditorsChoiceSection />
@@ -56,3 +48,11 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+export const pageQuery = graphql`
+  query {
+    aboutJson {
+      aboutOne
+    }
+  }
+`;

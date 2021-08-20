@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {graphql, useStaticQuery} from 'gatsby';
+import {graphql} from 'gatsby';
 
 import Spacer from '../atoms/Spacer';
 import CategoryBlock from '../organisms/CategoryBlock';
@@ -11,29 +11,10 @@ import SEO from '../atoms/SEO';
 import LOGO from '../images/banner/logo.svg';
 
 const ArticlesPage = (props) => {
-  const name = props?.location?.state?.name;
+  const {data, location} = props;
+  const name = location?.state?.name;
 
   const [mobile] = useWindowSize();
-
-  const data = useStaticQuery(graphql`
-    query ArticlesPageQuery {
-      allMarkdownRemark {
-        nodes {
-          timeToRead
-          frontmatter {
-            title
-            category
-            thumbnail
-            author
-            date(formatString: "MMM-YY")
-            path
-          }
-          excerpt(format: PLAIN, truncate: true, pruneLength: 100)
-        }
-        distinct(field: frontmatter___category)
-      }
-    }
-  `);
 
   const {nodes, distinct} = data.allMarkdownRemark;
   // distinct = array of categories
@@ -86,3 +67,23 @@ const ArticlesPage = (props) => {
 };
 
 export default ArticlesPage;
+
+export const PageQuery = graphql`
+  query {
+    allMarkdownRemark {
+      nodes {
+        timeToRead
+        frontmatter {
+          title
+          category
+          thumbnail
+          author
+          date(formatString: "MMM-YY")
+          path
+        }
+        excerpt(format: PLAIN, truncate: true, pruneLength: 100)
+      }
+      distinct(field: frontmatter___category)
+    }
+  }
+`;
