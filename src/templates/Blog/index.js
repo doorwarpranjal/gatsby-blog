@@ -61,7 +61,7 @@ export default function Template({
                 {`${date} | ${timeToRead} mins`}
               </h5>
             </div>
-            <Spacer x={mobile ? 20 : 50} />
+            <Spacer x={mobile || 50} y={mobile && 20} />
             <SocialShareLinks title={title} url={siteUrl + path} />
           </div>
           <Spacer y={mobile ? 20 : 50} />

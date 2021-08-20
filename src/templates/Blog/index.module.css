@@ -22,6 +22,8 @@ div.container > article > div.authorAndSocialContainer {
 }
 @media only screen and (max-width: 640px) {
   div.container > article > div.authorAndSocialContainer {
+    align-items: flex-start;
+    flex-direction: column;
     justify-content: space-between;
   }
 }
