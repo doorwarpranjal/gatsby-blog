@@ -14,7 +14,7 @@ const TimePeriodCard = ({name, content}) => {
         <div className={styles.circle} />
         <div className={styles.borderTop} />
         {mobile || <Spacer y={60} />}
-        <h2 className={styles.title}>{name}</h2>
+        <h3 className={styles.title}>{name}</h3>
         <Spacer y={10} />
         <p className={styles.content}>{content}</p>
       </div>

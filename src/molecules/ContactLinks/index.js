@@ -33,13 +33,13 @@ const ContactLinks = () => {
 
   return (
     <div className={styles.container}>
-      <h2>Contact</h2>
+      <h3>Contact</h3>
       <Spacer y={16} />
       <a className={styles.email} href={`mailto:${email}`}>
         theifmag@gmail<span className={styles.hide}>null</span>.com
       </a>
       <Spacer y={40} />
-      <h2>Follow</h2>
+      <h3>Follow</h3>
       <Spacer y={16} />
       <div className={styles.socialIconsContainer}>
         <SocialImageLink

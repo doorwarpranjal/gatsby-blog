@@ -26,7 +26,7 @@ const CategoryBlock = ({category}) => {
   return (
     <div id={categoryTitle} className={styles.container}>
       <div className="flex-row-space-between">
-        <h2 className={styles.title}>{categoryTitle}</h2>
+        <h3 className={styles.title}>{categoryTitle}</h3>
         <Spacer x={mobile ? 0 : 30} />
         <div className={styles.arrowContainer} onClick={onArrowClick}>
           <img

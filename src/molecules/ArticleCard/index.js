@@ -35,7 +35,7 @@ export const Category = ({category}) => (
   </Link>
 );
 
-export const Title = ({title}) => <h2 className={styles.title}>{title}</h2>;
+export const Title = ({title}) => <h3 className={styles.title}>{title}</h3>;
 
 export const Excerpt = ({excerpt}) => (
   <p className={styles.excerpt}>{excerpt}</p>

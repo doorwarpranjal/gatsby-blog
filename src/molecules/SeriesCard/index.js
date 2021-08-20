@@ -16,7 +16,7 @@ const SeriesCard = ({imageName, name}) => {
     <Link to="/articles" state={{name}}>
       <div className={styles.container}>
         <GatsbyImage className={styles.image} image={imageData} alt={name} />
-        <h2 className={styles.name}>{name}</h2>
+        <h3 className={styles.name}>{name}</h3>
       </div>
     </Link>
   );

@@ -12,7 +12,7 @@ const PopularArticle = ({article}) => {
   return (
     <article className={styles.container}>
       <Link to={path}>
-        <h2 className={styles.title}>{title}</h2>
+        <h3 className={styles.title}>{title}</h3>
         <Spacer y={10} />
         <p className={styles.excerpt}>{excerpt}</p>
       </Link>

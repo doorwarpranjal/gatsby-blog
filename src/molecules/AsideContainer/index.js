@@ -39,7 +39,7 @@ const AsideContainer = ({category, path}) => {
   return (
     <>
       <aside className={styles.container}>
-        <h2 className={styles.title}>You may also like</h2>
+        <h3 className={styles.title}>You may also like</h3>
         <Spacer y={30} />
         {articlesData.map((article, key) => (
           <Fragment key={key}>
