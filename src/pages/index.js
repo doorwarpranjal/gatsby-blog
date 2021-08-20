@@ -12,8 +12,11 @@ import SEO from '../atoms/SEO';
 import LOGO from '../images/banner/logo.svg';
 import '../styles/index.css';
 
-const HomePage = ({data}) => {
-  const {aboutOne} = data?.aboutJson;
+const HomePage = (props) => {
+  const {aboutJson, allMarkdownRemark} = props.data;
+
+  const {aboutOne} = aboutJson;
+  const {edges} = allMarkdownRemark;
 
   return (
     <>
@@ -41,7 +44,7 @@ const HomePage = ({data}) => {
       <EditorsChoiceSection />
       <WhoWeAre />
       <Series />
-      <LatestArticlesSection />
+      <LatestArticlesSection listOfArticles={edges} />
       <Footer />
     </>
   );
@@ -53,6 +56,26 @@ export const pageQuery = graphql`
   query {
     aboutJson {
       aboutOne
+    }
+    allMarkdownRemark(
+      limit: 7
+      sort: {fields: frontmatter___date, order: DESC}
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 150)
+          frontmatter {
+            title
+            path
+            category
+            author
+            date(formatString: "MMM-yy")
+            thumbnail
+          }
+          timeToRead
+        }
+      }
     }
   }
 `;

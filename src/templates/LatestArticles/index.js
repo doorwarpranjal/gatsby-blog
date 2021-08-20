@@ -1,5 +1,4 @@
 import React from 'react';
-import {graphql, useStaticQuery} from 'gatsby';
 
 import Title from '../../atoms/Title';
 import Spacer from '../../atoms/Spacer';
@@ -8,35 +7,12 @@ import useWindowSize from '../../functions/useWindowResize';
 
 import * as styles from './index.module.css';
 
-const LatestArticlesSection = () => {
+const LatestArticlesSection = (props) => {
+  const {listOfArticles} = props;
+
   const [mobile] = useWindowSize();
 
-  const data = useStaticQuery(graphql`
-    query LatestArticlesQuery {
-      allMarkdownRemark(
-        limit: 7
-        sort: {fields: frontmatter___date, order: DESC}
-      ) {
-        edges {
-          node {
-            id
-            excerpt(pruneLength: 150)
-            frontmatter {
-              title
-              path
-              category
-              author
-              date(formatString: "MMM-yy")
-              thumbnail
-            }
-            timeToRead
-          }
-        }
-      }
-    }
-  `);
-
-  const articles = data.allMarkdownRemark.edges.map((i) => ({
+  const articles = listOfArticles.map((i) => ({
     ...i.node.frontmatter,
     id: i.node.id,
     excerpt: i.node.excerpt,
