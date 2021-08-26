@@ -22,8 +22,6 @@ The former CJI replied by stating that:
 
 > “*Many women are invited to come as judges. But they have declined, citing domestic responsibilities about children studying in Class 12, etc. and Chief Justices of High Courts reported to me. These are things we can’t discuss*.”\[3] 
 >
-> <br>
->
 > Former Chief Justice of India 
 
 <br>
