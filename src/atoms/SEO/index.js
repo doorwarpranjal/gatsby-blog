@@ -16,6 +16,21 @@ function SEO({
   const image = metaImage && metaImage.src ? metaImage.src : null;
   const canonical = pathname ? `${siteUrl}${pathname}` : null;
 
+  const internalKeywords = [
+    'feminism',
+    'What is intersectional feminism',
+    'intersectionality',
+    'ifmag',
+    'The Intersectional Feminist',
+    'Magazine for women',
+    'LGBT',
+    'women empowerment',
+    'equality',
+    'equal rights',
+  ];
+
+  const keywordsObject = keywords.concat(internalKeywords);
+
   const ldJsonObject = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
@@ -66,7 +81,7 @@ function SEO({
         },
         {
           name: 'keywords',
-          content: keywords.join(','),
+          content: keywordsObject.join(','),
         },
         {
           property: 'og:title',
