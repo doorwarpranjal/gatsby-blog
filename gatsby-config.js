@@ -166,14 +166,6 @@ module.exports = {
     `gatsby-remark-line-breaks`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-robots-txt`,
-      options: {
-        host: 'https://www.theifmag.com',
-        sitemap: 'https://www.theifmag.com/sitemaps/sitemap.xml',
-        policy: [{userAgent: '*', allow: '/'}],
-      },
-    },
     'gatsby-plugin-webpack-bundle-analyser-v2',
   ],
 };
