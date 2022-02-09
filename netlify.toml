@@ -17,7 +17,7 @@
   compress = true
   
 [build.environment]
-  NODE_VERSION = "12.13"
+  NODE_VERSION = "14.18.1"
 
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
