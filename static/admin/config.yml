@@ -167,6 +167,7 @@ collections:
             'Podcasts',
             'Opinions & Stories',
             'Rendezvous',
+            'Art and the Rant',
           ]
       - label: "Editor's Choice"
         name: 'EditorChoice'

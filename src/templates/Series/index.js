@@ -25,6 +25,11 @@ const Series = () => {
       image: '/assets/series/stories.png',
       imageName: 'stories',
     },
+    {
+      name: 'Art and the Rant',
+      image: '/assets/series/stories.png',
+      imageName: 'stories',
+    },
   ];
 
   const [mobile] = useWindowSize();
