@@ -72,7 +72,9 @@ const CategoryBlock = ({category, allImageSharp}) => {
                       </div>
                       <Spacer x={20} />
                       <Image
-                        thumbnail={getThumbnail(article.frontmatter.thumbnail)}
+                        thumbnail={article.frontmatter.thumbnail}
+                        getThumbnail={getThumbnail}
+                        title={article.frontmatter.title}
                       />
                     </article>
                   </Link>
