@@ -1,0 +1,26 @@
+.container {
+  padding: 50px var(--horizontal-padding);
+  background-color: var(--color-tertiary);
+}
+
+.section {
+  display: flex;
+}
+
+.contactSection {
+  flex: 1;
+}
+
+.talkToUs {
+  flex: 1;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .container > section {
+    flex-direction: column;
+  }
+}

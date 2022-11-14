@@ -1,0 +1,57 @@
+{
+  "aboutOne": "IF is a pioneer online magazine dedicated exclusively to content relating to intersectional feminism. We are a group of young editors, writers, and illustrators from varied regional, cultural, and educational backgrounds.",
+  "aboutTwo": "In our shared vision for a better society, we aim to vocalize the ill effects of discrimination on the basis of social constructs such as caste, class, gender, race, and religion. We strive to celebrate diversity by representing varied geopolitical, ideological, and linguistic identities through our writing.",
+  "bios": [
+    {
+      "name": "Amrita S Nair",
+      "thumbnail": "/assets/amrita.png",
+      "bio": "Amrita S. Nair is the Founder and the Editor-in-Chief of The Intersectional Feminist and The Silent Sexism Project. A staunch feminist, lawyer, and social activist, she believes in the power of writing in impacting a change in society and smashing the patriarchy.",
+      "linkedin": "https://www.linkedin.com/in/amrita-s-nair-56a16312b/"
+    },
+    {
+      "name": "Astha Chhabra",
+      "thumbnail": "/assets/astha.png",
+      "bio": "Astha is an engineer by profession with a flair for writing. A feminist and an animal rights activist, she is also equipped with graphic designing skills and a part of the IF Magazine’s Design Team.",
+      "linkedin": "http://linkedin.com/in/astha-chhabra-20a20"
+    },
+    {
+      "name": "Gowri R",
+      "thumbnail": "/assets/gowri.png",
+      "bio": "Gowri. R is an artist who aims to reflect her ideology, that is feminism, through her art. She is deeply interested in the overlapping of gender and law. She uses bold aesthetics to convey her ideas on power, identity, and sexuality as a part of the IF Magazine's Design Team.",
+      "linkedin": "https://www.linkedin.com/in/gowri-r-523138206"
+    },
+    {
+      "name": "Mahima Meenaxi",
+      "thumbnail": "/assets/mahima.png",
+      "bio": "Mahima Meenaxi is a lawyer hailing from Bengaluru. As a feminist, an advocate of labour rights and an avid reader, she takes pleasure in writing opinion pieces, and analysing laws and policies. Having varied interests, she is also a multi-linguistic poetess.",
+      "linkedin": "http://linkedin.com/in/mahima-meenaxi-2913941a5"
+    },
+    {
+      "name": "Manasa M Poovayil",
+      "thumbnail": "/assets/manasa-new.png",
+      "bio": "Manasa M Poovayil is an engineer by profession and a feminist. Her idea of feminism transcends labels of causes of any single sphere of society. Though hailing from the STEM community, Manasa has immense love for fine arts. She is a trained singer and dancer. She is a voracious reader and loves writing. ",
+      "linkedin": "http://linkedin.com/in/manasa-m-poovayil-003402a1"
+    },
+    {
+      "name": "Parinishta T.",
+      "thumbnail": "/assets/parinishta.png",
+      "bio": "Parinishta T. is a Communication and Media Studies graduate and an aspiring designer. She believes in creating and consuming media responsibly, having observed the kind of impact it has on people's psyches. She likes analysing pop culture in her spare time and indulges in artistic pursuits.",
+      "linkedin": "http://linkedin.com/in/parinishta-thirumavalavan-14a4a417a"
+    },
+    {
+      "name": "Raagni Malhotra",
+      "thumbnail": "/assets/raagni.png",
+      "bio": "Raagni Malhotra holds an Associate’s degree in Criminal Justice. Born a New Yorker, but raised between the U.S. and India, she brings a multicultural perspective on feminist issues to the table. Passionate about studying gender-based violence and transnational crimes, she hopes to conduct productive research about these issues as a scholar. In her spare time, she can be found reading, attempting to learn another language, or fostering awareness about social issues in her community.",
+      "linkedin": "http://linkedin.com/in/raagni-malhotra"
+    },
+    {
+      "name": "Sarah Jacob",
+      "thumbnail": "/assets/sarah.png",
+      "bio": "Sarah is a design student at Srishti Bangalore. She loves to create and believes in the impact art and design can have on society. Feminism to her is about inclusivity and passing the mic. She hopes to listen, observe, acknowledge her privilege when due, and initiate dialogue through her work.",
+      "linkedin": "https://www.linkedin.com/in/sarah-jacob-1848331a5"
+    }
+  ],
+  "ourPast": "Concerned about the lack of a platform to discuss feminist thought, a group of like-minded individuals who believed that their writings, voices and words have the power to provoke change, came together to start the IF Magazine.",
+  "ourPresent": "We are firm believers in freedom of expression and in pursuance of our beliefs, we share content under a spectrum of areas which revolve around intersectionality.",
+  "ourFuture": "IF is ambitious and hopes to be a significant entity in promoting a better future through inclusivity and feminism for everyone, regardless of their identities. It is more than a magazine; it is a revolution."
+}

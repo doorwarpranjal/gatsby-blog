@@ -1,0 +1,19 @@
+.container {
+	padding: 0 var(--horizontal-padding);
+}
+
+.aboutText {
+	font-family: var(--font-secondary);
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: left;
+	color: var(--color-text);
+	width: var(--six-columns);
+}
+
+@media only screen and (max-width: 1024px) {
+	.aboutText {
+		width: 100%;
+	}
+}

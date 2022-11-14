@@ -1,0 +1,32 @@
+.container {
+	padding: 0 var(--horizontal-padding);
+}
+
+.articlesContainer {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 30px;
+}
+
+/* First 2 elements */
+.articlesContainer > article:nth-child(-n + 2) {
+	grid-row: span 5;
+}
+
+/* Rest of the elements */
+.articlesContainer > article:not(:nth-child(-n + 2)) {
+	grid-row: span 2;
+}
+
+@media only screen and (max-width: 640px) {
+	.articlesContainer {
+		grid-template-columns: auto;
+		grid-gap: 50px;
+		grid-template-rows: auto auto auto auto auto auto auto;
+	}
+	.articlesContainer > article:nth-child(n) {
+		grid-row: span 1;
+	}
+}

@@ -8,6 +8,7 @@ author: Rutvi Saxena
 category: Sports
 EditorChoice: true
 ---
+
 There’s a lot of things 2020 took away from us, among which is the Tokyo Summer Olympics. Apart from the usual grandeur and athleticism fans around the world expect from the Olympic games, this year’s event was expected to be a remarkable moment of representation for the LGBTQ+ community with over 100 elite athletes of the community in competition. From Great Britain’s Tom Daley to the purple-haired favourite Megan Rapinoe, and India’s very own Dutee Chand—the 2020 games were poised to be a bright rainbow in the summer. There’s still a lot to celebrate here of course, and gay athletes participated in the Olympics long before they could come out of the closet and onto the stadium without facing backlash. However, we’ve still a long way to go before the field becomes level for all players, especially those who are trans or intersex.
 
 <br>
@@ -44,20 +45,20 @@ The LGBT+ community then, already struggling to find a healthy conception of the
 
 <br>
 
-*<https://theconversation.com/ten-ethical-flaws-in-the-caster-semenya-decision-on-intersex-in-sport-116448>*
+_<https://theconversation.com/ten-ethical-flaws-in-the-caster-semenya-decision-on-intersex-in-sport-116448>_
 
 <br>
 
-*<https://www.pinknews.co.uk/2020/04/21/trans-athlete-chris-mosier-lgbt-sport-transphobia-sexism-racewalking-olympics-team-usa/>*
+_<https://www.pinknews.co.uk/2020/04/21/trans-athlete-chris-mosier-lgbt-sport-transphobia-sexism-racewalking-olympics-team-usa/>_
 
 <br>
 
-*<https://www.smithsonianmag.com/history/brief-history-openly-gay-olympians-180968125/>*
+_<https://www.smithsonianmag.com/history/brief-history-openly-gay-olympians-180968125/>_
 
 <br>
 
-*<https://www.outsports.com/2019/7/24/20696610/olympic-tokyo-summer-lgbtq-gay-lesbian-trans-athlete>*
+_<https://www.outsports.com/2019/7/24/20696610/olympic-tokyo-summer-lgbtq-gay-lesbian-trans-athlete>_
 
 <br>
 
-*https://yourstory.com/socialstory/2019/11/stoptransbill2019-india-transgender-community-rights*
+_https://yourstory.com/socialstory/2019/11/stoptransbill2019-india-transgender-community-rights_

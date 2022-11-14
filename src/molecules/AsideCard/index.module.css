@@ -1,0 +1,33 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.container * {
+	text-decoration: none;
+}
+
+.thumbnail {
+	width: var(--three-columns);
+	height: calc(var(--three-columns) * 0.75);
+	object-fit: cover;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+	border-radius: 8px;
+}
+
+.title {
+	font-family: var(--font-primary);
+	font-size: 1.2em;
+	line-height: 1.4;
+	text-align: left;
+	color: var(--color-black);
+}
+
+.description {
+	font-family: var(--font-secondary);
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: left;
+	color: var(--color-text);
+}

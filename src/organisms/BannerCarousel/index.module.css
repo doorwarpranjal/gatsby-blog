@@ -1,0 +1,26 @@
+.container {
+  width: var(--four-columns);
+  border-radius: 8px;
+}
+.container *:last-child {
+  height: 80vh;
+  border-radius: 8px;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 100vw;
+    margin: 0 -20px;
+    padding: 0 15vw;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, #ffdadc, #ffffff);
+  }
+  .container *:last-child {
+    height: auto;
+  }
+}

@@ -2,7 +2,7 @@
 template: BlogPost
 path: /Interpretation-of-Consent
 date: 2020-10-19T15:03:05.247Z
-title: "Unboxing Consent: The Interpretation of Consent in Sexual Offences"
+title: 'Unboxing Consent: The Interpretation of Consent in Sexual Offences'
 thumbnail: /assets/84B0B741-19EB-4850-AAB8-7D1768E7C55B.jpg
 author: Eshvar Girish and Kritika Trivedi
 category: Justice & Law

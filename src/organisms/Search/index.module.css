@@ -1,0 +1,98 @@
+.container {
+  background-color: var(--white);
+  padding: 25px var(--horizontal-padding);
+  box-sizing: border-box;
+}
+
+.container * {
+  text-decoration: none;
+}
+
+.container > div:first-child {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--six-columns);
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px rgb(0 0 0 / 10%);
+}
+
+.container input {
+  background-color: var(--white);
+  color: var(--color-text);
+  font-family: var(--font-secondary);
+  font-size: 1.3em;
+  flex: 1;
+}
+.container input::placeholder {
+  font-family: var(--font-secondary);
+}
+
+.closeIcon {
+  cursor: pointer;
+}
+
+.container > div:first-child > span {
+  position: relative;
+  left: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.resultsContainer {
+  overflow: auto;
+  height: 89vh;
+}
+
+.resultContainer {
+  width: var(--six-columns);
+  position: relative;
+}
+
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--six-columns);
+}
+
+.emptyContainer p {
+  font-size: 1.2em;
+  color: var(--color-text);
+}
+
+.emptyContainer img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+
+  .container input {
+    font-size: 1em;
+  }
+
+  .closeIcon {
+    height: 24px;
+    width: 24px;
+  }
+
+  .resultContainer,
+  .emptyContainer,
+  .container > div:first-child,
+  .container input {
+    width: calc(100vw - (var(--horizontal-padding) * 2));
+  }
+
+  .emptyContainer img {
+    width: 80vw;
+  }
+}

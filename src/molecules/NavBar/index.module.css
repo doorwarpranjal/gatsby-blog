@@ -1,0 +1,37 @@
+.link {
+  font-family: var(--font-secondary);
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  color: var(--color-text);
+  text-decoration: none;
+  opacity: 0.8;
+  padding: 10px 0;
+}
+
+.link:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.activeLink {
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .link {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: 10px 20px;
+  }
+  .link {
+    font-size: 0.9em;
+    padding: 5px 0;
+  }
+}

@@ -8,7 +8,8 @@ author: Mahima Meenaxi
 category: Opinions & Stories
 EditorChoice: false
 ---
-***Disclaimer: This article in no manner intends to disregard the victimisation of women and persons of other genders by patriarchy. It only aims to propagate the struggle against patriarchy by reasoning the need for a more inclusive approach in feminism.***
+
+**_Disclaimer: This article in no manner intends to disregard the victimisation of women and persons of other genders by patriarchy. It only aims to propagate the struggle against patriarchy by reasoning the need for a more inclusive approach in feminism._**
 
 <br>
 
@@ -42,9 +43,9 @@ The problem of lack of empathy in the reception of men’s expression of vulnera
 
 <br>
 
-* * Men often use more lethal means of suicide than women.
-  * Men are less likely than women to seek help when they are struggling.
-  * Men are subject to the expectation that they will persevere through adverse situations or that they will follow through on decisions (including to die by suicide) and “get it done”
+- - Men often use more lethal means of suicide than women.
+  - Men are less likely than women to seek help when they are struggling.
+  - Men are subject to the expectation that they will persevere through adverse situations or that they will follow through on decisions (including to die by suicide) and “get it done”
 
 <br>
 

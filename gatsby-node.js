@@ -1,14 +1,14 @@
 const path = require(`path`);
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions;
+exports.createPages = async ({actions, graphql, reporter}) => {
+  const {createPage} = actions;
 
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
+  const blogPostTemplate = path.resolve(`src/templates/Blog/index.js`);
 
   const result = await graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: {order: DESC, fields: [frontmatter___date]}
         limit: 1000
       ) {
         edges {
@@ -16,6 +16,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             id
             frontmatter {
               path
+              thumbnail
             }
           }
         }
@@ -29,11 +30,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMarkdownRemark.edges.forEach(({node}) => {
+    const thumbnailImage = node.frontmatter.thumbnail.split('assets/')[1];
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
-      context: {} // additional data can be passed via context
+      context: {
+        thumbnail: '/' + thumbnailImage + '/g',
+      }, // additional data can be passed via context
     });
   });
 };

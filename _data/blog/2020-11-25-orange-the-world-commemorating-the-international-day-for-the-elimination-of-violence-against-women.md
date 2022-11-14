@@ -10,6 +10,7 @@ author: Manasa Poovayil
 category: Violence & Harassment
 EditorChoice: true
 ---
+
 <!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
@@ -675,7 +676,7 @@ EditorChoice: true
 
 <br>
 
-***Why 25 November?***
+**_Why 25 November?_**
 
 <br>
 
@@ -683,7 +684,7 @@ It was the year 1960 and the place Dominican Republic. For 30 years, Rafael Truj
 
 <br>
 
-The Mirabal family had four daughters – Patria, Minerva, [María Teresa](https://en.wikipedia.org/wiki/Mar%C3%ADa_Teresa_Mirabal "María Teresa Mirabal"), and Dedé; three out of the four of them were actively involved in clandestine activities against this tyrannical regime. They refused to raise their children in a country rid with corruption and injustice. The three sisters had already been through a lot because of their activities. Minerva had studied law but was not allowed to practice as she did not accept Trujillo’s sexual advances and Maria Teresa has been arrested and harassed on express orders from Trujillo.
+The Mirabal family had four daughters – Patria, Minerva, [María Teresa](https://en.wikipedia.org/wiki/Mar%C3%ADa_Teresa_Mirabal 'María Teresa Mirabal'), and Dedé; three out of the four of them were actively involved in clandestine activities against this tyrannical regime. They refused to raise their children in a country rid with corruption and injustice. The three sisters had already been through a lot because of their activities. Minerva had studied law but was not allowed to practice as she did not accept Trujillo’s sexual advances and Maria Teresa has been arrested and harassed on express orders from Trujillo.
 
 <br>
 
@@ -695,7 +696,7 @@ The Mirabal sisters became a symbol of popular and feminist resistance.
 
 <br>
 
-***Violence against women in India***
+**_Violence against women in India_**
 
 <br>
 
@@ -723,7 +724,7 @@ This year, due to the pandemic, saw a spurt of domestic violence cases being rep
 
 <br>
 
-***What can you do?***
+**_What can you do?_**
 
 <br>
 

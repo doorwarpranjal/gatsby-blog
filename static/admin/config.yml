@@ -1,7 +1,10 @@
 backend:
   name: github
   # change repo to your git repository url
-  repo: doorwarpranjal/gatsby-blog
+  repo: theifmag/gatsby-blog
+
+site_url: https://www.theifmag.com
+display_url: https://www.theifmag.com
 
 media_folder: static/assets
 public_folder: /assets
@@ -41,20 +44,97 @@ collections:
                 label: Description
                 default: ''
                 required: false
+          - widget: object
+            name: socialLinks
+            label: Social Links
+            fields:
+              - widget: string
+                name: linkedIn
+                label: LinkedIn
+                default: ''
+                required: false
+              - widget: string
+                name: twitter
+                label: Twitter
+                default: ''
+                required: false
+              - widget: string
+                name: facebook
+                label: Facebook
+                default: ''
+                required: false
+              - widget: string
+                name: email
+                label: Email
+                default: ''
+                required: false
+              - widget: string
+                name: instagram
+                label: Instagram
+                default: ''
+                required: false
+
+      - name: about
+        label: About the Team
+        file: /static/assets/about/about-the-team.json
+        fields:
+          - widget: string
+            name: aboutOne
+            label: First paragraph
+            default: ''
+          - widget: string
+            name: aboutTwo
+            label: Second paragraph
+            default: ''
+          - widget: string
+            name: ourPast
+            label: Our Past
+            default: ''
+          - widget: string
+            name: ourPresent
+            label: Our Present
+            default: ''
+          - widget: string
+            name: ourFuture
+            label: Our Future
+            default: ''
+
+          - widget: list
+            name: bios
+            label: Bios
+            allow_add: false
+            fields:
+              - widget: string
+                name: name
+                label: Name
+                default: ''
+              - widget: string
+                name: bio
+                label: Bio
+                default: ''
+              - widget: string
+                name: linkedin
+                label: LinkedIn
+                default: ''
+              - widget: string
+                name: thumbnail
+                label: Thumbnail
+                default: ''
+
   - name: blog
     label: Blog
     folder: _data/blog
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
     fields:
-      - { label: Template, name: template, widget: hidden, default: BlogPost }
+      - {label: Template, name: template, widget: hidden, default: BlogPost}
       - name: path
         label: Path
         widget: string
         # pattern: [/]
         hint: 'Path must start with /'
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
+      - {name: date, label: Date, widget: datetime}
+      - {name: title, label: Title}
       - label: Meta Description
         name: metaDescription
         widget: text
@@ -67,7 +147,7 @@ collections:
         media_library:
           config:
             multiple: false
-      - { name: author, label: author, widget: string }
+      - {name: author, label: author, widget: string}
       - label: category
         name: category
         widget: select
@@ -87,6 +167,7 @@ collections:
             'Podcasts',
             'Opinions & Stories',
             'Rendezvous',
+            'Art and the Rant',
           ]
       - label: "Editor's Choice"
         name: 'EditorChoice'

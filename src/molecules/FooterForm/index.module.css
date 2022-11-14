@@ -1,0 +1,21 @@
+.title {
+  font-family: var(--font-secondary);
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: left;
+  color: var(--color-text);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: var(--three-columns);
+  min-width: 300px;
+}
+
+@media only screen and (max-width: 640px) {
+  .form {
+    width: 100%;
+    min-width: auto;
+  }
+}

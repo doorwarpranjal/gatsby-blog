@@ -1,78 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+* {
+  --column-gap: 40px;
+  --one-column: min(80px, calc((100vw - (var(--column-gap) * 11)) / 12));
+  --two-columns: calc((var(--one-column) * 2) + var(--column-gap));
+  --three-columns: calc(
+    var(--one-column) + var(--two-columns) + var(--column-gap)
+  );
+  --four-columns: calc((var(--one-column) * 4) + (var(--column-gap) * 3));
+  --five-columns: calc((var(--one-column) * 5) + (var(--column-gap) * 4));
+  --six-columns: calc((var(--one-column) * 6) + (var(--column-gap) * 5));
+  --max-space: 1200px;
+  --horizontal-padding: max(
+    calc((100vw - var(--max-space)) / 2),
+    calc(var(--column-gap) + var(--one-column))
+  );
+  --font-primary: 'Playfair Display';
+  --font-secondary: 'Montserrat';
 
+  --white: #fff;
+  --color-light: #fafcfe;
+  --color-primary: #d41776;
+  --color-dark: #870e4b;
+  --color-secondary: #47797a;
+  --color-tertiary: #ffdadc;
+  --color-black: #0e0e2c;
+  --color-text: #484849;
+  --color-aside: #f4f8fc;
 
-.slick-dots li button:before{
-    
-    font-size: 10px !important;
+  margin: 0;
+  font-family: var(--font-secondary);
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-#about-button{
-    background-color: #ee4c7c;
-    border: none;
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
 }
 
-.comingsoon-container{
-    display: flex;
-    width: 100vw;
-    height: 80vh;
-
-    padding-left: 5vw;
-    padding-right: 5vw;
-    align-items: center;
+body {
+  background-color: var(--white);
 }
 
-.comingsoon-left{
-    flex: 1;
-    margin-top: -10vh;
+.titleText {
+  font-family: var(--font-primary);
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: left;
+  color: var(--color-black);
 }
 
-.comingsoon-right{
-    flex: 1;
-    overflow: hidden;
-    object-fit: contain;
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.comingsoon-right img{
-    object-fit: contain;
-    width: 100%;
-    object-position: right;
+.flex-row-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.comingsoon-social-icon{
-    width: 20vw;
-    display: flex;
-
+@media only screen and (max-width: 640px) {
+  * {
+    --horizontal-padding: 20px;
+  }
+  .titleText {
+    font-size: 1.8em;
+  }
 }
-
-
-.main-text-div{
-    margin-top: 17vh;
-   padding-left: 5vw;
-}
-
-
-
-@media screen and (max-width: 1000px) {
-
-    .comingsoon-container{
-        flex-direction: column;
-        height: 90vh;
-
-       
-    }
-
-    .comingsoon-left{
-        margin-top: 10vh;
-    }
-
-
-.main-text-div{
-margin-top: 5vh;
-margin-bottom: 2vh;
-}
-
-
-}
-
-
-

@@ -1,0 +1,25 @@
+.container > h2 {
+  font-family: var(--font-secondary);
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: left;
+  color: var(--color-text);
+}
+
+.email {
+  color: var(--color-dark);
+  font-family: var(--font-secondary);
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+}
+
+.socialIconsContainer {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
